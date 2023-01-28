@@ -1,7 +1,27 @@
 :root{
     box-sizing: border-box;
+    height:100%;
+}
+*{
+    margin:0;
+    padding:0;
+}
+html, body{min-height:100%;}
+body{
+    height:100vh;
+    display:flex;
+    border:pink solid;
+}
+div{
+    border: solid blue;
 }
 
-body{
-    background-image: url(images/yonkos.png);
+.sidebar{
+    background-image: url(images/pixel-art.gif);
+    background-size: contain;
+    flex:2;
+}
+.main{
+    flex:3;
+    background-color:rgb(213, 213, 213)
 }
