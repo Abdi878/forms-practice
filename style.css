@@ -5,23 +5,67 @@
 *{
     margin:0;
     padding:0;
+    font-family: textFont;
 }
 html, body{min-height:100%;}
 body{
     height:100vh;
     display:flex;
-    border:pink solid;
+    /* border:pink solid; */
 }
 div{
-    border: solid blue;
+    /* border: solid blue; */
 }
 
 .sidebar{
     background-image: url(images/pixel-art.gif);
-    background-size: contain;
+    background-size: auto;
     flex:2;
 }
 .main{
     flex:3;
-    background-color:rgb(213, 213, 213)
+    background-color:rgb(235, 235, 235);
+    display:flex;
+    flex-direction: column;
+}
+
+.main>*{
+    flex:1;
+    padding-left: 2rem;
+    /* border:solid pink; */
+}
+@font-face {
+    font-family: textFont;
+    src: url(Merchant\ Copy.ttf);
+}
+.main>p{
+    font-weight: bolder;
+    font-size: 1.8rem;
+    display: flex;
+    align-items: flex-end;
+    padding-bottom: 5rem;
+    
+    }
+form{
+    background-color: rgb(241, 243, 244);
+    font-size: 1.6rem;
+}
+
+.container{
+    border: solid blue;
+    margin-top: 1rem;
+    display: flex;
+    flex-wrap: wrap;
+    width: 25rem;
+    gap:4rem;
+    row-gap: 1rem;
+}
+
+.container>div{
+    display: flex;
+    flex-direction: column;
+}
+
+label{
+    font-weight: bold;
 }
