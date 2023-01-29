@@ -52,7 +52,7 @@ form{
 }
 
 .container{
-    border: solid blue;
+    /* border: solid blue; */
     margin-top: 1rem;
     display: flex;
     flex-wrap: wrap;
@@ -68,4 +68,12 @@ form{
 
 label{
     font-weight: bold;
+}
+input{
+    width: 10rem;
+    border-radius: 0.3rem;
+    font-size: 2rem;
+}
+.login{
+    font-size: 1.5rem;
 }
