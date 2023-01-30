@@ -11,16 +11,17 @@ html, body{min-height:100%;}
 body{
     height:100vh;
     display:flex;
-    /* border:pink solid; */
-}
-div{
-    /* border: solid blue; */
 }
 
 .sidebar{
     background-image: url(images/pixel-art.gif);
     background-size: cover;
+    background-repeat: no-repeat;
     flex:2;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    position: relative;
 }
 .main{
     flex:3;
@@ -32,7 +33,6 @@ div{
 .main>*{
     flex:1;
     padding-left: 2rem;
-    /* border:solid pink; */
 }
 @font-face {
     font-family: textFont;
@@ -69,6 +69,7 @@ form{
 
 label{
     font-weight: bold;
+    color: rgb(2, 149, 207);
 }
 input{
     width: 10rem;
@@ -91,4 +92,21 @@ button{
 }
 .login{
     font-size: 1.5rem;
+}
+
+img{
+    height: 20rem;
+    left: calc(50%-114.28px);
+    position: absolute;
+}
+@font-face {
+    font-family: titleFont;
+    src: url(captionfont.TTF);
+}
+
+.sidebar>div{
+    font-size: 3rem;
+    font-family: titleFont;
+    text-align: center;
+    margin-top: 12rem;
 }
