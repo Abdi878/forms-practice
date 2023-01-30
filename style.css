@@ -78,6 +78,9 @@ input:focus{
     border: blue solid;
     box-shadow: 1rem;
 }
+input:invalid{
+    border: red solid;
+}
 button{
     font-size: 2.2rem;
     border-radius: 0.3rem;
