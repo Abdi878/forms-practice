@@ -19,7 +19,7 @@ div{
 
 .sidebar{
     background-image: url(images/pixel-art.gif);
-    background-size: auto;
+    background-size: cover;
     flex:2;
 }
 .main{
@@ -44,6 +44,7 @@ div{
     display: flex;
     align-items: flex-end;
     padding-bottom: 5rem;
+    width: 45rem;
     
     }
 form{
