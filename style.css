@@ -78,7 +78,7 @@ input:focus{
     border: blue solid;
     box-shadow: 1rem;
 }
-input:invalid{
+input:not(:placeholder-shown):invalid{
     border: red solid;
 }
 button{
