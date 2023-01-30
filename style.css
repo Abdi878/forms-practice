@@ -1,6 +1,9 @@
 :root{
     box-sizing: border-box;
     height:100%;
+    --bgmain:rgb(34, 30, 30);
+    --bgform:rgb(52, 49, 49);
+    --greentext:rgb(5, 183, 5);
 }
 *{
     margin:0;
@@ -25,7 +28,7 @@ body{
 }
 .main{
     flex:3;
-    background-color:rgb(235, 235, 235);
+    background-color:var(--bgmain);
     display:flex;
     flex-direction: column;
 }
@@ -39,17 +42,27 @@ body{
     src: url(Merchant\ Copy.ttf);
 }
 .main>p{
-    font-weight: bolder;
     font-size: 1.8rem;
     display: flex;
     align-items: flex-end;
     padding-bottom: 5rem;
+    padding-top: 4rem;
+    line-height: 1.4rem;
     width: 45rem;
-    
+    color: var(--greentext);
+    margin-bottom: 3rem;
+    margin-top: 1rem;
     }
-form{
-    background-color: rgb(241, 243, 244);
+.form{
+    padding-left: 0;
+}
+fieldset{
+    background-color: var(--bgform);
     font-size: 1.6rem;
+    padding-left: 2rem;
+    border: 0;
+    padding-top: 2rem;
+    padding-bottom: 2rem;
 }
 
 .container{
@@ -68,30 +81,36 @@ form{
 }
 
 label{
-    font-weight: bold;
-    color: rgb(2, 149, 207);
+    font-weight:100;
+    color: rgb(219, 219, 219);
 }
 input{
     width: 10rem;
     border-radius: 0.3rem;
     font-size: 2rem;
+    background-color: var(--bgmain);
 }
 input:focus{
     border: blue solid;
     box-shadow: 1rem;
 }
 input:not(:placeholder-shown):invalid{
-    border: red solid;
+    background-color: rgba(255, 0, 0, 0.567);
+}
+input:not(:placeholder-shown):valid{
+    background-color: rgba(2, 183, 2, 0.541);
 }
 button{
     font-size: 2.2rem;
     border-radius: 0.3rem;
     padding: 0.2rem 2rem;
-    color: rgb(7, 149, 16);
-    margin: 3rem 0;
+    color: var(--greentext);
+    border: var(--greentext) solid 0.2rem;
+    margin: 3rem 2rem;
 }
 .login{
     font-size: 1.5rem;
+    color: white;
 }
 
 img{
@@ -109,4 +128,10 @@ img{
     font-family: titleFont;
     text-align: center;
     margin-top: 12rem;
+    color: rgba(255, 192, 203, 0.821)
+}
+
+fieldset>h2{
+    color: rgb(212, 213, 213);
+    font-weight: 200;
 }
