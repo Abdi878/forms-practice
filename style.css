@@ -39,7 +39,7 @@ body{
 }
 @font-face {
     font-family: textFont;
-    src: url(Merchant\ Copy.ttf);
+    src: url(MerchantCopy.ttf);
 }
 .main>p{
     font-size: 1.8rem;
